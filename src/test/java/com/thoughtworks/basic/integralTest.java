@@ -14,6 +14,13 @@ public class integralTest {
 
         Assert.assertEquals(1, actual);
     }
+    @Test
+    public void should_return_0_integra_when_consumption_8(){
+        BigDecimal expense=new BigDecimal(8);
 
+        int actual = IntegralCalculator.calculate(expense);
+
+        Assert.assertEquals(0, actual);
+    }
 
 }

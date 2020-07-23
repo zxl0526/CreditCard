@@ -14,7 +14,7 @@ public class IntegralCalculator {
     public static int calculate(BigDecimal Monetary) {
         BigDecimal monetary = new BigDecimal(10);
 
-        long integral=monetary.divide(monetary).setScale(0, BigDecimal.ROUND_UP ).longValue();
+        long integral=Monetary.divide(monetary).setScale(0, BigDecimal.ROUND_DOWN ).longValue();
 
         return (int) integral;
 
